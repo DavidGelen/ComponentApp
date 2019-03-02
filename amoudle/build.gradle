@@ -19,6 +19,9 @@ android {
         versionCode config.android.versionCode
         versionName config.android.versionName
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        //加了这行，modulea下面新建立的res文件名前面都会加modulea_这个标识
+        resourcePrefix "modulea_"
     }
     buildTypes {
         release {

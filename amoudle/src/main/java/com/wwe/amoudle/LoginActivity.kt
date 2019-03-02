@@ -1,7 +1,9 @@
 package com.wwe.amoudle
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import kotlinx.android.synthetic.main.login_layout.*
 
 /**
  * @name ComponentApp
@@ -16,5 +18,9 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.login_layout)
+        val intent = Intent(this,Class.forName("com.wwe.MainActivity"))
+        modulea_button.setOnClickListener {
+            startActivity(intent)
+        }
     }
 }

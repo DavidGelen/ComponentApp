@@ -4,3 +4,5 @@
 - sdk统一版本控制
 
 - 合并manifest
+
+- Application初始化
